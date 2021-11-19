@@ -1,9 +1,8 @@
 import React from "react";
+import BasicAppBar from "./BasicAppBar";
 
 export default function Navbar(){
     return(
-        <div style={{ height:"86px",display:"flex" }}>
-            Nom du site
-        </div>
+        <BasicAppBar/>
     );
 }

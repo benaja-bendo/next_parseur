@@ -1,9 +1,10 @@
+import { Box } from "@mui/system";
 import React from "react";
 
 export default function Footer(){
     return(
-        <div>
+        <Box>
             Footer du site
-        </div>
+        </Box>
     );
 }
