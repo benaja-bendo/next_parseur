@@ -1,6 +1,8 @@
+import React from 'react'
 import { ThemeProvider, createTheme } from '@mui/material';
 import Layout from '../components/layout'
-import '../styles/globals.css'
+import 'tailwindcss/tailwind.css';
+import { Provider } from 'react-redux';
 
 function MyApp({ Component, pageProps }) {
   const darkTheme = createTheme({
@@ -13,12 +15,12 @@ function MyApp({ Component, pageProps }) {
   });
 
   return (
-    <ThemeProvider theme={darkTheme}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ThemeProvider>
+
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+   
   )
-}
+} 
 
 export default MyApp

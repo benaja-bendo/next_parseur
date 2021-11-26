@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Card, CardActions, CardContent, Typography } from "@mui/material";
 
-export default function CardDetailSideBar(){
+export default function CardDetailSideBar({title}){
     return(<>
     <Card
         style={{
@@ -11,7 +11,7 @@ export default function CardDetailSideBar(){
       >
         <CardContent>
           <Typography variant="h5" component="h2">
-          Lieux de travail
+          {title}
           </Typography>
         </CardContent>
       </Card>

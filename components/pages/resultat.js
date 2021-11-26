@@ -1,9 +1,11 @@
 import { Box } from "@mui/system";
 import React from "react";
-import MainResultat from "../components/MainResultat";
-import SideBar from "../components/SideBar";
+import MainResultat from "../MainResultat";
+import SideBar from "../SideBar";
 
-export default function Resultat() {
+export default function Resultat({customData,fileData}) {
+    console.log(fileData);
+   
     return (<>
         <Box
             sx={{
@@ -17,10 +19,10 @@ export default function Resultat() {
             }}
         >
             <Box sx={{ gridArea: 'main' }}>
-                <MainResultat/>
+                <MainResultat resume={fileData.resumes} />
             </Box>
             <Box sx={{ gridArea: 'sidebar' }}>
-                <SideBar/>
+                <SideBar resume={fileData.resumes}/>
             </Box>
         </Box>
     </>);
